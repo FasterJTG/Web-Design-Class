@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>John's Lindbergh Morning Routine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    img {height: 350px; width: 250px;}
+    .mySlides {display:none;}
+</style>
+
+</head>
+<body>
+<div class="w3-container w3-auto">
+  <h1 class="w3-center w3-green w3-text-yellow"><b>My Lindbergh Morning Routine</b></h1>
+</div>
+<!-- set up each image, the coding will be the same but different images-->
+<div class ="w3-content w3-display-container" style="max-width: 500px">
+    <!--start of image-->
+    <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">
+        <img src="lindbergh/entrance.jpg" alt="Entrance" style="width:100%">
+        <div class="w3-display-topright w3-large w3-container w3-padding-12 w3-yellow w3-text-green">
+            <h2><b>1. Walk to school</b></h2>
+        </div>
+    </div>
+    <!--end of image-->
+    <!--start of image-->
+    <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">
+        <img src="lindbergh/commons.jpg" alt="Commons" style="width:100%">
+        <div class="w3-display-topright w3-large w3-container w3-padding-12 w3-yellow w3-text-green">
+            <h2><b>2. Enter the school</b></h2>
+        </div>
+    </div>
+    <!--end of image-->
+    <!--start of image-->
+    <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">
+        <img src="lindbergh/coffee.jpg" alt="Coffee" style="width:100%">
+        <div class="w3-display-topright w3-large w3-container w3-padding-12 w3-yellow w3-text-green">
+            <h2><b>3. Get a coffee</b></h2>
+        </div>
+    </div>
+    <!--end of image-->
+    <!--start of image-->
+    <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">
+        <img src="lindbergh/expo.jpg" alt="Expo" style="width:100%">
+        <div class="w3-display-topright w3-large w3-container w3-padding-12 w3-yellow w3-text-green">
+            <h2><b>4. Walk to class</b></h2>
+        </div>
+    </div>
+    <!--end of image-->
+    <!--start of image-->
+    <div class="w3-display-container mySlides w3-green w3-xlarge">
+        <img src="lindbergh/collab.jpg" alt="Collab" style="width:100%">
+        <div class="w3-display-topright w3-large w3-container w3-padding-12 w3-yellow w3-text-green">
+            <h2><b>5. Wait for class to begin</b></h2>
+        </div>
+    </div>
+    <!--end of image-->
+     <!--start of image-->
+     <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">
+        <img src="lindbergh/class.jpg" alt="Class" style="width:100%">
+        <div class="w3-display-topright w3-large w3-container w3-padding-12 w3-yellow w3-text-green">
+            <h2><b>6. Begin class</b></h2>
+        </div>
+    </div>
+    <!--end of image-->
+
+
+<!-- do not change this, these are your buttons for navigating through images-->
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<!-- DO NOT CHANGE ANYTHING BELOW THIS LINE-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!-- CHANGE FOOTER-->
+<footer>
+    <div>
+        <h3 class="w3-center w3-yellow w3-text-green"> John Zoeller, 2025 </h3>
+    <div>
+</footer>
+</body>
+</html>
