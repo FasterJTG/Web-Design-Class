@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdowns and Accordions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <h2>Facts About St. Louis</h2>
+  </div>
+  <!-- Question #1 - regular answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container 23-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-gray w3-left-align "
+style="width: 50%">1. When was the Gateway Arch built? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo1" class="w3-container w3-hide">
+  <h4>1965</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+  <!-- Question #2 - image answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container 23-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-red w3-left-align "
+style="width: 50%">2. How many World Series have the Cardinals won? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo2" class="w3-container w3-hide">
+    <h4>11</h4>
+    <img src="stl/cardinals.jpg" alt="Cardinals" style="width:250px">
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+  <!-- Question #3 - image answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container 23-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-khaki w3-left-align "
+style="width: 50%">3. What Italian-American fried dish was created in St. Louis? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo3" class="w3-container w3-hide">
+    <h4>Toasted Ravioli</h4>
+    <img src="stl/travs.jpg" alt="Toasted Ravioli" style="width:250px">
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+  <!-- Question #4 - image answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container 23-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-blue w3-left-align "
+style="width: 50%">4. What European country initally controlled St. Louis? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo4" class="w3-container w3-hide">
+    <h4>France</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+  <!-- Question #5 - image answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container 23-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-green w3-left-align "
+style="width: 50%">5. In what year did St. Louis host the World's Fair and the Olympics? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo5" class="w3-container w3-hide">
+    <h4>1904</h4>
+    <img src="stl/1904.jpg" alt="1904 Olympics" style="width:250px">
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- footer with your name on it -->
+
+<div>
+    <footer> John Zoeller, 2025 </footer>
+</div>
+
+<!-- DO NOT CHANGE THE SCRIPT -->
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+</body>
+</html>
